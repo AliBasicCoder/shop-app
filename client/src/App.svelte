@@ -167,7 +167,8 @@
     this is an application to show my skills with:<br />
     HTML, CSS, JS, Svelte, Node.JS, Express and MongoDB<br />
     you could find the source code for this project
-    <a href="/#">here</a><br /><br />
+    <a href="https://github.com/AliBasicCoder/shop-app" target="_blank">here</a
+    ><br /><br />
     AliBasicCoder 2022 (c)
   </div>
   <div class="links">
