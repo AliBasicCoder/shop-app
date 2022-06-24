@@ -6,9 +6,9 @@
   "scripts": {
     "server": "cd server && node .",
     "server-watch": "cd server && nodemon .",
-    "build": "cd client && npm run build",
-    "build-watch": "cd client && npm run dev",
-    "dev": "concurrently \"cd server && nodemon .\" \"cd client && npm run dev\"",
+    "build": "npm run build --prefix=./client",
+    "build-watch": "npm run dev --prefix=./client",
+    "dev": "concurrently \"cd server && nodemon .\" \"npm run dev --prefix=./client\"",
     "start": "npm run build && npm run server"
   },
   "keywords": [],
