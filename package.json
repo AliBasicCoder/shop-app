@@ -10,7 +10,7 @@
     "build-watch": "npm run dev --prefix=./client",
     "dev": "concurrently \"cd server && nodemon .\" \"npm run dev --prefix=./client\"",
     "install": "npm install --prefix=./client && npm install --prefix=./server",
-    "start": "cd ./server && node ."
+    "start": "cd client && ./node_modules/.bin/rollup -c && cd ../server && node ."
   },
   "keywords": [],
   "author": "",
