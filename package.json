@@ -1,0 +1,20 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && node .",
+    "server-watch": "cd server && nodemon .",
+    "build": "cd client && npm run build",
+    "build-watch": "cd client && npm run dev",
+    "dev": "concurrently \"cd server && nodemon .\" \"cd client && npm run dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.16"
+  }
+}

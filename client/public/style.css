@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --bg-color: #131921;
+}
+
+@media (max-width: 750px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+/* @media (max-width: 510px) {
+  :root {
+    font-size: 8px;
+  }
+} */
+
+.form {
+  display: flex;
+  position: relative;
+  width: 42vw;
+  left: 50%;
+  transform: translate(-50%);
+  flex-direction: column;
+  gap: 10px;
+  min-width: 350px;
+  max-width: 600px;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.form > input {
+  padding: 20px;
+  /* margin-bottom: 10px; */
+}
+.form > h1 {
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: var(--bg-color);
+  color: white;
+  padding: 20px;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.flex-container.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container.column {
+  flex-direction: column;
+}
+
+.flex-container.small-gap {
+  gap: 15px;
+}
+
+.add-rating .msg {
+  width: 600px;
+  margin-bottom: 10px;
+}
