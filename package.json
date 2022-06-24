@@ -8,12 +8,13 @@
     "server-watch": "cd server && nodemon .",
     "build": "cd client && npm run build",
     "build-watch": "cd client && npm run dev",
-    "dev": "concurrently \"cd server && nodemon .\" \"cd client && npm run dev\""
+    "dev": "concurrently \"cd server && nodemon .\" \"cd client && npm run dev\"",
+    "start": "npm run build && npm run server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "concurrently": "^7.2.2",
     "nodemon": "^2.0.16"
   }
